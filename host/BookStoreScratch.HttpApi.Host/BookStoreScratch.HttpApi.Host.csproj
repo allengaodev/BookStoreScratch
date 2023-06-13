@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BookStoreScratch.HttpApi\BookStoreScratch.HttpApi.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.Application\BookStoreScratch.Application.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.EntityFrameworkCore\BookStoreScratch.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
 </Project>
