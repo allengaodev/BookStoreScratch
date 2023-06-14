@@ -1,4 +1,6 @@
-namespace BookStoreScratch.HttpApi.Host;
+using System;
+
+namespace BookStoreScratch;
 
 public class WeatherForecast
 {
