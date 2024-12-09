@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.EntityFrameworkCore", "src\BookStoreScratch.EntityFrameworkCore\BookStoreScratch.EntityFrameworkCore.csproj", "{968D7AA2-415C-4942-BEBB-A1DF7F91977C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{F579ADEE-6D56-4018-98CE-583479732346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.Console", "app\BookStoreScratch.Console\BookStoreScratch.Console.csproj", "{A0F26B28-2B5C-4360-9BF5-510781482BF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +48,10 @@ Global
 		{968D7AA2-415C-4942-BEBB-A1DF7F91977C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{968D7AA2-415C-4942-BEBB-A1DF7F91977C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{968D7AA2-415C-4942-BEBB-A1DF7F91977C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F26B28-2B5C-4360-9BF5-510781482BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F26B28-2B5C-4360-9BF5-510781482BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F26B28-2B5C-4360-9BF5-510781482BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F26B28-2B5C-4360-9BF5-510781482BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{948B641F-5EE8-469B-B2D1-EEA46FDCDA11} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
@@ -51,5 +59,6 @@ Global
 		{BB6174C2-CACD-4C5F-82B3-86BBD99E58F1} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
 		{570CEB71-962F-4417-B8CC-16F92D5CD9A5} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
 		{968D7AA2-415C-4942-BEBB-A1DF7F91977C} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
+		{A0F26B28-2B5C-4360-9BF5-510781482BF9} = {F579ADEE-6D56-4018-98CE-583479732346}
 	EndGlobalSection
 EndGlobal

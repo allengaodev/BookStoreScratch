@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>dotnet-BookStoreScratch.Console-6bc61e3c-e573-4924-8460-b1ee23f476c6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="2.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Core" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BookStoreScratch.Domain.Shared\BookStoreScratch.Domain.Shared.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.Application.Contracts\BookStoreScratch.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.Application\BookStoreScratch.Application.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.Domain\BookStoreScratch.Domain.csproj" />
+    <ProjectReference Include="..\..\src\BookStoreScratch.EntityFrameworkCore\BookStoreScratch.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
