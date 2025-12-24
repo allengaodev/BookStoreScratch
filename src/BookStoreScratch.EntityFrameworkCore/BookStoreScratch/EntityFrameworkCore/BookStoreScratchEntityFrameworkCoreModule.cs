@@ -7,4 +7,5 @@ namespace BookStoreScratch.EntityFrameworkCore;
 [DependsOn(typeof(BookStoreScratchDomainModule))]
 public class BookStoreScratchEntityFrameworkCoreModule : AbpModule
 {
+
 }
