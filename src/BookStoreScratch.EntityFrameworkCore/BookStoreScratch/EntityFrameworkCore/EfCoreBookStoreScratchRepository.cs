@@ -6,7 +6,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace BookStoreScratch.EntityFrameworkCore;
 
-public class EfCoreBookStoreScratchRepository: EfCoreRepository<BookStoreScratchDbContext, Book, Guid>, IBookStoreScratchEventRepository
+public class EfCoreBookStoreScratchRepository: EfCoreRepository<BookStoreScratchDbContext, Book, Guid>, IBookStoreScratchRepository
 {
     public EfCoreBookStoreScratchRepository(IDbContextProvider<BookStoreScratchDbContext> dbContextProvider) : base(dbContextProvider)
     {

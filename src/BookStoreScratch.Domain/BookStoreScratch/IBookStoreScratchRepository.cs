@@ -4,7 +4,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace BookStoreScratch;
 
-public interface IBookStoreScratchEventRepository : IBasicRepository<Book, Guid>
+public interface IBookStoreScratchRepository : IBasicRepository<Book, Guid>
 {
     Task<Book?> FindByBookNameAsync(string name);
 }
