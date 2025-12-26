@@ -1,2 +1,4 @@
 1. [設計與實踐](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-module-design-and-lifecycle)
 2. [領域層級](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-domain-layer)
+3. [基礎設施層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-infrastructure-layer)
+4. [應用層與 HTTP 層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-application-http-layer)
