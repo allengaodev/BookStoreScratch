@@ -1,7 +1,6 @@
 using System;
 using Volo.Abp;
 using Volo.Abp.Domain.Entities;
-using Volo.Abp.Domain.Entities.Auditing;
 
 namespace BookStoreScratch;
 
@@ -17,16 +16,25 @@ public class Book : Entity<Guid>
 
     internal Book() {}
 
-    internal Book(
+    public Book(
         Guid id,
         string name,
-        BookType type,
+        BookType bookType,
         DateTime publishDate,
         decimal price)
         : base(id)
     {
+        Check.NotNullOrWhiteSpace(name, nameof(name));
+        Check.NotDefaultOrNull<BookType>(bookType, nameof(bookType));
+        Check.NotDefaultOrNull<DateTime>(publishDate, nameof(publishDate));
+
+        if (price < 0)
+        {
+            throw new ArgumentException("Price must be greater than or equal to 0.");
+        }
+
         Name = name;
-        BookType = type;
+        BookType = bookType;
         PublishDate = publishDate;
         Price = price;
     }

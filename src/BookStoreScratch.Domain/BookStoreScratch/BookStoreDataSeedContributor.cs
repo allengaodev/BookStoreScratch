@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Repositories;
+using Volo.Abp.Guids;
 using Volo.Abp.MultiTenancy;
 
 namespace BookStoreScratch;
@@ -11,16 +12,16 @@ public class BookStoreDataSeedContributor : IDataSeedContributor, ITransientDepe
 {
     private readonly IRepository<Book, Guid> _bookRepository;
     private readonly ICurrentTenant _currentTenant;
-    private readonly BookManager _bookManager;
+    private readonly IGuidGenerator _guidGenerator;
 
     public BookStoreDataSeedContributor(
         IRepository<Book, Guid> bookRepository,
         ICurrentTenant currentTenant,
-        BookManager bookManager)
+        IGuidGenerator guidGenerator)
     {
         _bookRepository = bookRepository;
         _currentTenant = currentTenant;
-        _bookManager = bookManager;
+        _guidGenerator = guidGenerator;
     }
 
     public async Task SeedAsync(DataSeedContext context)
@@ -32,7 +33,7 @@ public class BookStoreDataSeedContributor : IDataSeedContributor, ITransientDepe
                 return;
             }
 
-            var book = _bookManager.CreateBook(
+            var book = new Book(_guidGenerator.Create(),
                 "The Hitchhiker's Guide to the Galaxy",
                 BookType.ScienceFiction,
                 new DateTime(1979, 10, 12),

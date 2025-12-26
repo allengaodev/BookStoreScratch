@@ -9,12 +9,10 @@ namespace BookStoreScratch.Books;
 public class BookAppService: ApplicationService, IBookAppService
 {
     private readonly IBookStoreScratchRepository _bookStoreScratchRepository;
-    private readonly BookManager _bookManager;
 
-    public BookAppService(IBookStoreScratchRepository bookStoreScratchRepository, BookManager bookManager)
+    public BookAppService(IBookStoreScratchRepository bookStoreScratchRepository)
     {
         _bookStoreScratchRepository = bookStoreScratchRepository;
-        _bookManager = bookManager;
     }
 
     public async Task<BookDto> GetAsync(Guid id)
@@ -39,7 +37,7 @@ public class BookAppService: ApplicationService, IBookAppService
 
     public async Task<BookDto> CreateAsync(CreateUpdateBookDto input)
     {
-        var book = _bookManager.CreateBook(input.Name, input.Type, input.PublishDate, input.Price);
+        var book = new Book(GuidGenerator.Create(), input.Name, input.BookType, input.PublishDate, input.Price);
         await _bookStoreScratchRepository.InsertAsync(book);
         return ObjectMapper.Map<Book, BookDto>(book);
     }
@@ -49,7 +47,7 @@ public class BookAppService: ApplicationService, IBookAppService
         var book = await _bookStoreScratchRepository.GetAsync(id);
 
         book.Name = input.Name;
-        book.BookType = input.Type;
+        book.BookType = input.BookType;
         book.PublishDate = input.PublishDate;
         book.Price = input.Price;
 
