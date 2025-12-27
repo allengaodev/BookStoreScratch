@@ -1,0 +1,49 @@
+using Serilog;
+using Serilog.Events;
+
+namespace BookStoreScratch.HttpApi.Host;
+
+public class Program
+{
+    public static async Task<int> Main(string[] args)
+    {
+        Log.Logger = new LoggerConfiguration()
+#if DEBUG
+            .MinimumLevel.Debug()
+#else
+            .MinimumLevel.Information()
+#endif
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+            .Enrich.FromLogContext()
+            .WriteTo.Async(c => c.Console())
+            .CreateLogger();
+
+        try
+        {
+            Log.Information("Starting web.");
+            var builder = WebApplication.CreateBuilder(args);
+            builder.Host.AddAppSettingsSecretsJson()
+                .UseAutofac()
+                .UseSerilog();
+            await builder.Services.AddApplicationAsync<BookStoreScratchHttpApiHostModule>();
+            var webApplication = builder.Build();
+            await webApplication.InitializeApplicationAsync();
+            await webApplication.RunAsync();
+            return 0;
+        }
+        catch (Exception ex)
+        {
+            if (ex is HostAbortedException)
+            {
+                throw;
+            }
+
+            Log.Fatal(ex, "Host terminated unexpectedly!");
+            return 1;
+        }
+        finally
+        {
+            Log.CloseAndFlush();
+        }
+    }
+}
