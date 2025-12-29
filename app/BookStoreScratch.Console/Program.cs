@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
+using Volo.Abp;
 
 namespace BookStoreScratch.Console;
 
@@ -30,6 +31,9 @@ public class Program
             var builder = Host.CreateApplicationBuilder(args);
 
             builder.Logging.ClearProviders().AddSerilog();
+            builder.ConfigureContainer(builder.Services.AddAutofacServiceProviderFactory());
+
+            builder.Services.AddHostedService<GetBookHostedService>();
 
             await builder.Services.AddApplicationAsync<BookStoreScratchConsoleModule>();
 
