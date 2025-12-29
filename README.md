@@ -2,3 +2,5 @@
 2. [領域層級](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-domain-layer)
 3. [基礎設施層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-infrastructure-layer)
 4. [應用層與 HTTP 層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-application-http-layer)
+5. [Host 層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-host-layer)
+6. [Http Client](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-http-client)
