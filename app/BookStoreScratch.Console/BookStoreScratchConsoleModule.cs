@@ -1,4 +1,4 @@
-using BookStoreScratch.HttpApi.Client;
+using BookStoreScratch.HttpApi.Client.Static;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
@@ -6,7 +6,7 @@ namespace BookStoreScratch.Console;
 
 [DependsOn(
     typeof(AbpAutofacModule),
-    typeof(BookStoreScratchHttpApiClientModule)
+    typeof(BookStoreScratchHttpApiClientStaticModule)
 )]
 public class BookStoreScratchConsoleModule : AbpModule
 {
