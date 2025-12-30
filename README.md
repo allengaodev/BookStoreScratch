@@ -4,3 +4,4 @@
 4. [應用層與 HTTP 層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-application-http-layer)
 5. [Host 層](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-host-layer)
 6. [Http Client](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-http-client)
+7. [安裝模組](https://blog.allengaodev.com/posts/abp-io-tutorials-from-scratch-install)
