@@ -1,0 +1,38 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "BookStoreScratch.HttpApi": {
+      "path": "src/BookStoreScratch.HttpApi/BookStoreScratch.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.HttpApi.Client": {
+      "path": "src/BookStoreScratch.HttpApi.Client/BookStoreScratch.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.Application": {
+      "path": "src/BookStoreScratch.Application/BookStoreScratch.Application.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.Application.Contracts": {
+      "path": "src/BookStoreScratch.Application.Contracts/BookStoreScratch.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.Domain": {
+      "path": "src/BookStoreScratch.Domain/BookStoreScratch.Domain.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.Domain.Shared": {
+      "path": "src/BookStoreScratch.Domain.Shared/BookStoreScratch.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "BookStoreScratch.EntityFrameworkCore": {
+      "path": "src/BookStoreScratch.EntityFrameworkCore/BookStoreScratch.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    }
+  }
+}
