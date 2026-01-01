@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.HttpApi.Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.HttpApi.Client.Static", "src\BookStoreScratch.HttpApi.Client.Static\BookStoreScratch.HttpApi.Client.Static.csproj", "{8DE77722-C2CC-4825-875C-EF6D1795E447}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreScratch.Installer", "src\BookStoreScratch.Installer\BookStoreScratch.Installer.csproj", "{9B8595FF-091C-4B79-8B0A-14687C062E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,18 @@ Global
 		{8DE77722-C2CC-4825-875C-EF6D1795E447}.Release|x64.Build.0 = Release|Any CPU
 		{8DE77722-C2CC-4825-875C-EF6D1795E447}.Release|x86.ActiveCfg = Release|Any CPU
 		{8DE77722-C2CC-4825-875C-EF6D1795E447}.Release|x86.Build.0 = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|x64.Build.0 = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B8595FF-091C-4B79-8B0A-14687C062E00}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -221,5 +235,6 @@ Global
 		{46BF420B-7D35-4CF6-9E13-D76658F5C2AD} = {7226ABEA-787E-1D09-10EA-A2ECF996D6A6}
 		{7A70B9BA-9DF5-4706-B03E-8319FB56E337} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
 		{8DE77722-C2CC-4825-875C-EF6D1795E447} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
+		{9B8595FF-091C-4B79-8B0A-14687C062E00} = {3165F2E4-C2CE-4C57-8A52-124194587DF2}
 	EndGlobalSection
 EndGlobal

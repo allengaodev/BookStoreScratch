@@ -4,6 +4,10 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <RootNamespace />
+    <PackageId>BookStoreScratch.Domain.Shared</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>allengaodev</Authors>
+    <Company>allengaodev</Company>
   </PropertyGroup>
 
   <ItemGroup>

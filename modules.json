@@ -1,0 +1,9 @@
+{
+  "name": "My Source Modules",
+  "modules": {
+    "BookStoreScratch": {
+      "name": "BookStoreScratch",
+      "description": "自定義書店模組"
+    }
+  }
+}
